@@ -514,6 +514,9 @@ font-weight: 700;
 line-height: 62.4px; 
 margin-top: 48px;
 }
+.services-container img{
+  width: 100%;
+}
 @media (min-width:768px) {
   .services-title h3{
     font-size: 130px;
