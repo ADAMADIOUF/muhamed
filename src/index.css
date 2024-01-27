@@ -522,3 +522,364 @@ margin-top: 48px;
     font-size: 130px;
   }
 }
+/* Experience */
+.experience-container span{
+
+-webkit-text-stroke-width: 1;
+-webkit-text-stroke-color: #FFF;
+font-family: Arimo;
+font-size: 130px;
+font-style: normal;
+font-weight: 700;
+line-height: 130px; /* 100% */
+  -webkit-text-stroke-width: 1px; 
+  -webkit-text-stroke-color: #FFF; 
+  color: transparent; 
+ margin-top: 10px;
+}
+
+@supports (not (-webkit-text-stroke: 1px #FFF)) {
+  .experience-container span {
+    color:var(--clr-white); 
+    -webkit-text-stroke: none; 
+  }
+}
+.experience-container div{
+  display: flex;
+  align-items: center;
+  gap:1rem;
+}
+.experience-container h3{
+  color: #FFF;
+
+/* tradition_agency__1440x810_default/DM Sans/Medium 18 */
+font-family: "DM Sans";
+font-size: 18px;
+font-style: normal;
+font-weight: 500;
+line-height: 23.4px; /* 130% */
+}
+.experience-content h5{
+  color: #888;
+
+/* tradition_agency__1440x810_default/DM Sans/Bold 14 */
+font-family: "DM Sans";
+font-size: 14px;
+font-style: normal;
+font-weight: 700;
+line-height: 18.67px; 
+letter-spacing: 1.3px;
+margin-top: 2rem;
+}
+.experience-content h3{
+  color: #FFF;
+
+/* tradition_agency__1440x810_default/Arimo/Bold 38 */
+font-family: Arimo;
+font-size: 38px;
+font-style: normal;
+font-weight: 700;
+line-height: 49.4px; /* 130% */
+margin-top: 5rem;
+}
+.container-two-experience{
+  margin-top: 5rem;
+}
+.container-two-experience span{
+  color: #888;
+text-align: center;
+font-family: Arimo;
+font-size: 24px;
+font-style: normal;
+font-weight: 400;
+line-height: 24px; /* 100% */
+
+}
+.experience-content-two h3{
+  color: #FFF;
+font-family: Arimo;
+font-size: 26px;
+font-style: normal;
+font-weight: 400;
+line-height: 52px; /* 200% */
+letter-spacing: 0.18px;
+margin-top: 3rem;
+}
+.experience-content-two p{
+  color: #D0D0D0;
+font-family: "DM Sans";
+font-size: 16px;
+font-style: normal;
+font-weight: 400;
+line-height: 30px; /* 187.5% */
+}
+.hr{
+  display: flex;
+flex-direction: column;
+align-items: flex-start;
+align-self: stretch;
+background-color: #888888;
+height: 0.1rem;
+margin: 1rem;
+text-align: center;
+margin:  1rem auto;
+}
+@media (min-width:992px) {
+  .experience-container{
+    display: flex;
+    justify-content: space-between;
+  }
+  .container-two-experience{
+    display: flex;
+    gap: 5rem;
+  }
+  .experience-content-two{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 5rem;
+    
+  }
+}
+/* Contact */
+.contact-form{
+ 
+  display: flex;
+padding: 42px 50px 64px 50px;
+flex-direction: column;
+
+background: #000;
+}
+.contact-form div{
+  display: flex;
+  flex-direction: column;
+}
+.input{
+  height: 38px;
+width:100%;
+align-self: stretch;
+border-bottom: 1px solid #CCC;
+background: #000;
+border-left: none;
+border-top: none;
+border-right: none;
+outline: none;
+}
+.btn{
+  border-radius: 20px;
+border-bottom: 7px solid #FF5900;
+background: #000;
+display: flex;
+
+padding: 20px 100px 17px 40px;
+align-items: center;
+color: var(--clr-white);
+margin-top: 2rem;
+border-top: none;
+border-left: none;
+border-right: none;
+color: #FFF;
+font-family: "DM Sans";
+font-size: 16px;
+font-style: normal;
+font-weight: 700;
+
+}
+.contact-content{
+  margin-top: 2rem;
+}
+.contact-content span{
+  color: #888;
+font-family: "DM Sans";
+font-size: 14px;
+font-style: normal;
+font-weight: 700;
+line-height: 18.67px; /* 133.357% */
+letter-spacing: 1.3px;
+}
+.contact-content h2{
+  color: #FFF;
+font-family: Arimo;
+font-size: 38px;
+font-style: normal;
+font-weight: 700;
+line-height: 49.4px; /* 130% */
+margin-top: 3rem;
+}
+.contact-content p{
+  color: #C4C4C4;
+font-family: "DM Sans";
+font-size: 18px;
+font-style: normal;
+font-weight: 400;
+line-height: 29.99px; /* 166.611% */
+}
+.contact-content h6{
+  color: #FFF;
+font-family: "DM Sans";
+font-size: 18px;
+font-style: normal;
+font-weight: 400;
+line-height: 43.2px; /* 240% */
+}
+.contact-links{
+  display: flex;
+  gap: 1rem;
+  margin-top: 30px;
+}
+
+.contact-links span{
+  color: #FFF;
+text-align: center;
+font-family: "Font Awesome 5 Brands";
+font-size: 16px;
+font-style: normal;
+font-weight: 400;
+line-height: 16px; /* 100% */
+transition: var(--transition);
+cursor: pointer;
+}
+.contact-links span:hover{
+  color:#FF5900;
+}
+@media (min-width:768px) {
+  .contact-container{
+    display: flex;
+    justify-content: space-between;
+    gap: 55px;
+  }
+  .contact-form{
+    flex: 1;
+  }
+  .contact-content{
+    flex: 1;
+  }
+}
+/* Footer */
+.footer{
+  background: #000;
+  display: flex;
+flex-direction: column;
+align-items: center;
+align-self: stretch;
+}
+.footer-logo{
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+.footer-contact{
+ margin-top: 2rem; 
+}
+.footer-contact h3{
+  color: #FFF;
+font-family: Arimo;
+font-size: 20px;
+font-style: normal;
+font-weight: 700;
+line-height: 36px; /* 180% */
+}
+.footer-contact h6{
+  color: #FFF;
+
+/* tradition_agency__1440x810_default/DM Sans/Regular 18 */
+font-family: "DM Sans";
+font-size: 18px;
+font-style: normal;
+font-weight: 400;
+line-height: 43.2px; /* 240% */
+}
+.footer-links{
+  color: #FFF;
+font-family: Arimo;
+font-size: 20px;
+font-style: normal;
+font-weight: 700;
+line-height: 36px; /* 180% */
+}
+.footer-links p{
+  color: #FFF;
+
+/* tradition_agency__1440x810_default/DM Sans/Regular 18 */
+font-family: "DM Sans";
+font-size: 18px;
+font-style: normal;
+font-weight: 400;
+line-height: 30.78px; /* 171% */
+}
+.footer-links-container {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  align-items: center;
+  padding: 20px; 
+  border-radius: 10px; 
+}
+
+.footer-links-container span {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #ff5900;
+  color: var(--clr-white);
+  width: 38.334px;
+  height: 38.334px;
+  font-size: 2rem;
+  border-radius: 50%;
+  
+}
+@media (min-width:992px) {
+  .footer-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 30px;
+  }
+}
+
+/* Works */
+.title-works span{
+  color: #888;
+text-align: center;
+
+/* tradition_agency__1440x810_default/DM Sans/Bold 14 */
+font-family: "DM Sans";
+font-size: 14px;
+font-style: normal;
+font-weight: 700;
+line-height: 18.67px; /* 133.357% */
+letter-spacing: 1.3px;
+text-align: center;
+display: block;
+margin: 2rem auto;
+}
+.container-works img{
+  width: 100%;
+ height: auto;
+}
+.title-works h2{
+  color: #FFF;
+text-align: center;
+
+/* tradition_agency__1440x810_default/Arimo/Bold 38 */
+font-family: Arimo;
+font-size: 38px;
+font-style: normal;
+font-weight: 700;
+line-height: 49.4px; /* 130% */
+margin-top: 56px;
+}
+.work h3{
+  color: #FFF;
+
+/* tradition_agency__1440x810_default/Arimo/Bold 26 */
+font-family: Arimo;
+font-size: 26px;
+font-style: normal;
+font-weight: 700;
+line-height: 33.8px; /* 130% */
+}
+@media (min-width:992px) {
+  .container-works{
+    display: flex;
+  }
+}

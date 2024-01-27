@@ -74,6 +74,16 @@ const Navbar = () => {
           </li>
           <li>
             <Link
+              to='experience'
+              smooth={true}
+              duration={500}
+              onClick={handleItemClick}
+            >
+              <span className='nav-dots'></span>Experience
+            </Link>
+          </li>
+          <li>
+            <Link
               to='contact'
               smooth={true}
               duration={500}
