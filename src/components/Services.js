@@ -1,5 +1,7 @@
 import React from 'react'
 import a from "../assets/services1.png"
+import b from '../assets/services2.png'
+import c from '../assets/services3.png'
 const Services = () => {
   return (
     <div className='services section-center' id='services'>
@@ -39,7 +41,21 @@ const Services = () => {
           <img src={a} alt='' />
           <div className='services-content'>
             <span>MY BUILD DESIGN</span>
-            <h3>WEB DESIGN / MOBILE APPS</h3>
+            <h3>WEB DESIGN /UI DESIGN</h3>
+          </div>
+        </div>
+        <div>
+          <img src={b} alt='' />
+          <div className='services-content'>
+            <span>MY BUILD DESIGN</span>
+            <h3>WEB DESIGN /RESPONSIVE DESIGN</h3>
+          </div>
+        </div>
+        <div>
+          <img src={c} alt='' />
+          <div className='services-content'>
+            <span>MY BUILD DESIGN</span>
+            <h3>WEB DESIGN /ACCESSIBILITY</h3>
           </div>
         </div>
       </div>
