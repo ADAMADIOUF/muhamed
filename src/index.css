@@ -160,7 +160,9 @@ nav {
 .logo{
   display: flex;
   align-items: center;
-  
+  justify-content: center;
+  gap: 1rem;
+  cursor: pointer;
 }
 .logo img {
   width: 47.58px;
@@ -176,6 +178,10 @@ font-style: normal;
 font-weight: 500;
 line-height: normal;
 margin: 1rem;
+}
+.logo h3{
+  font-size: 30px;
+  color: var(--clr-white);
 }
 .menu ul {
   list-style: none;
@@ -665,13 +671,14 @@ border-left: none;
 border-top: none;
 border-right: none;
 outline: none;
+color: var(--clr-white);
 }
 .btn{
   border-radius: 20px;
 border-bottom: 7px solid #FF5900;
 background: #000;
 display: flex;
-
+cursor: pointer;
 padding: 20px 100px 17px 40px;
 align-items: center;
 color: var(--clr-white);
@@ -733,15 +740,30 @@ line-height: 43.2px; /* 240% */
   color: #FFF;
 text-align: center;
 font-family: "Font Awesome 5 Brands";
-font-size: 16px;
+font-size: 18px;
 font-style: normal;
 font-weight: 400;
 line-height: 16px; /* 100% */
 transition: var(--transition);
 cursor: pointer;
 }
-.contact-links span:hover{
+.contact-links a{
+  color: var(--clr-white);
+}
+.contact-links a:hover{
   color:#FF5900;
+}
+.linkedin  {
+  color: #0077b5; 
+}
+.behance {
+  color: #1769ff;
+}
+.whatsapp {
+  color: #25d366;
+}
+.twitter {
+  color: #1da1f2; 
 }
 @media (min-width:768px) {
   .contact-container{
@@ -817,7 +839,7 @@ line-height: 30.78px; /* 171% */
   border-radius: 10px; 
 }
 
-.footer-links-container span {
+.footer-links-container a {
   display: flex;
   align-items: center;
   justify-content: center;

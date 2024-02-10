@@ -27,7 +27,7 @@ const Navbar = () => {
           <img src={logo} alt='Logo' />
         </Link>
         <Link to='home' smooth={true} duration={500}>
-          <span>portfolio</span>
+          <h3>portfolio</h3>
         </Link>
       </div>
       <div className={`menu ${isMenuOpen ? 'active' : ''}`}>

@@ -1,5 +1,10 @@
 import React from 'react'
-import { FaFacebook, FaInstagram, FaLinkedin, FaTwitter } from 'react-icons/fa'
+import {
+  FaLinkedin,
+  FaBehance,
+  FaTwitter,
+  FaWhatsappSquare,
+} from 'react-icons/fa'
 
 const Footer = () => {
   return (
@@ -64,16 +69,43 @@ const Footer = () => {
           </p>
           <div className='footer-links-container'>
             <span>
-              <FaFacebook />
+             
+              <a
+                href='https://www.behance.net/gallery/181344613/Fashion-E-commerce-Website'
+                target='_blank'
+                rel='noopener noreferrer'
+              >
+                <FaBehance />
+              </a>
             </span>
             <span>
-              <FaTwitter />
+              <a
+                href='https://twitter.com/abdulsalam43142/'
+                target='_blank'
+                rel='noopener noreferrer'
+              >
+                <FaTwitter />
+              </a>
             </span>
             <span>
-              <FaLinkedin />
+              <a
+                href='https://www.linkedin.com/in/muhammed-abdulsalam-a925142a8'
+                target='_blank'
+                rel='noopener noreferrer'
+              >
+                {' '}
+                <FaLinkedin />
+              </a>
             </span>
             <span>
-              <FaInstagram />
+             
+               <a
+                href='https://wa.link/xmk2ms'
+                target='_blank'
+                rel='noopener noreferrer'
+              >
+                <FaWhatsappSquare/>
+              </a>
             </span>
           </div>
         </article>

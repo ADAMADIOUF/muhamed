@@ -1,6 +1,10 @@
 import React,{useState} from 'react'
-import { FaFacebook, FaInstagram, FaLinkedin } from 'react-icons/fa'
-
+import {
+  FaLinkedin,
+  FaBehance,
+  FaTwitter,
+  FaWhatsappSquare,
+} from 'react-icons/fa'
 const Contact = () => {
    const [formData, setFormData] = useState({
      name: '',
@@ -45,6 +49,37 @@ const Contact = () => {
    }
   return (
     <div className='contact section-center' id='contact'>
+      <div className='services-title'>
+        <span>
+          <svg
+            xmlns='http://www.w3.org/2000/svg'
+            width='94'
+            height='95'
+            viewBox='0 0 94 95'
+            fill='none'
+          >
+            <path
+              d='M16.361 94.3175L0.456478 78.1722L51.163 26.6976L54.678 23.1293L49.6691 23.1291L8.24922 23.1305L8.25001 0.26561L93.0755 0.262969L93.0726 86.4375L70.6118 86.4378L70.6132 44.3596L70.6133 39.2425L67.0224 42.888L16.361 94.3175Z'
+              fill='#FF5900'
+            />
+          </svg>
+        </span>
+        <h3>MY contact</h3>
+        <span>
+          <svg
+            xmlns='http://www.w3.org/2000/svg'
+            width='93'
+            height='95'
+            viewBox='0 0 93 95'
+            fill='none'
+          >
+            <path
+              d='M16.2438 94.3175L0.339301 78.1722L51.0458 26.6976L54.5608 23.1293L49.552 23.1291L8.13204 23.1305L8.13283 0.265605L92.9583 0.262969L92.9554 86.4375L70.4946 86.4378L70.496 44.3596L70.4962 39.2425L66.9053 42.888L16.2438 94.3175Z'
+              fill='#FF5900'
+            />
+          </svg>
+        </span>
+      </div>
       <div className='contact-container'>
         <article className='contact-form'>
           <h3>Drop Me a Line</h3>
@@ -54,10 +89,9 @@ const Contact = () => {
           </p>
           <form onSubmit={handleSubmit} className='contact-form'>
             <div>
-              <label htmlFor=''>Name</label>
+              <label htmlFor=''>Name*</label>
               <input
                 type='text'
-                placeholder='Your Name'
                 value={formData.name}
                 onChange={(e) =>
                   setFormData({ ...formData, name: e.target.value })
@@ -67,10 +101,9 @@ const Contact = () => {
               />
             </div>
             <div>
-              <label htmlFor=''>Email</label>
+              <label htmlFor=''>Email*</label>
               <input
                 type='email'
-                placeholder='Your Email'
                 value={formData.email}
                 onChange={(e) =>
                   setFormData({ ...formData, email: e.target.value })
@@ -80,9 +113,8 @@ const Contact = () => {
               />
             </div>
             <div>
-              <label htmlFor=''>Phone</label>
+              <label htmlFor=''>Phone*</label>
               <input
-                placeholder='phoneNumber'
                 value={formData.phoneNumber}
                 onChange={(e) =>
                   setFormData({ ...formData, phoneNumber: e.target.value })
@@ -107,16 +139,44 @@ const Contact = () => {
           </p>
           <h6>No, 6 Olohunshogo, street Gaa Akanbi, Ilorin.</h6>
           <h6>+234 9013139157</h6>
-          <h6>abdulsalammuhammed093</h6>
+          <h6>abdulsalammuhammed093@gmail.com</h6>
           <div className='contact-links'>
             <span>
-              <FaFacebook />
+              <a
+                href='https://www.linkedin.com/in/muhammed-abdulsalam-a925142a8'
+                target='_blank'
+                rel='noopener noreferrer'
+              >
+                <FaLinkedin className='linkedin' />
+              </a>
             </span>
             <span>
-              <FaLinkedin />
+              <a
+                href='https://www.behance.net/gallery/181344613/Fashion-E-commerce-Website'
+                target='_blank'
+                rel='noopener noreferrer'
+              >
+                {' '}
+                <FaBehance className='behance' />
+              </a>
             </span>
             <span>
-              <FaInstagram />
+              <a
+                href='https://twitter.com/abdulsalam43142/'
+                target='_blank'
+                rel='noopener noreferrer'
+              >
+                <FaTwitter className='twitter' />
+              </a>
+            </span>
+            <span>
+              <a
+                href='https://wa.link/xmk2ms'
+                target='_blank'
+                rel='noopener noreferrer'
+              >
+                <FaWhatsappSquare className='whatsapp' />
+              </a>
             </span>
           </div>
         </article>
