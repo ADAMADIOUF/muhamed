@@ -303,6 +303,7 @@ line-height: 36px;
 }
 .hero-get-in-touch{
   position: relative;
+  cursor: pointer;
 }
 .hero-get-in-touch span{
   color: #FFF;
@@ -315,6 +316,7 @@ letter-spacing: 1.4px;
 position: absolute;
 top: 20%;
 left: 2rem;
+
 }
 
 .hero-link-content{

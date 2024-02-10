@@ -1,8 +1,15 @@
-import React from 'react'
+import React,{useState} from 'react'
 import a from "../assets/Vector.png"
 import b from '../assets/hero.dote.png'
+import { Link } from 'react-scroll'
 import HeroLink from './HeroLink'
 const Hero = () => {
+  const [isMenuOpen, setMenuOpen] =useState(false)
+  const handleItemClick = () => {
+    setMenuOpen(false)
+  }
+
+  const navbarHeight = 80 
   return (
     <div className='hero' id='home'>
       <HeroLink />
@@ -27,8 +34,17 @@ const Hero = () => {
             </p>
           </article>
           <article className='hero-get-in-touch'>
-            <img src={b} alt='' />
-            <span>GET IN TOUCH WITH ME</span>
+            <Link
+              to='contact'
+              spy={true}
+              smooth={true}
+              duration={500}
+              offset={-navbarHeight}
+              onClick={handleItemClick}
+            >
+              <img src={b} alt='' />
+              <span>GET IN TOUCH WITH ME</span>
+            </Link>
           </article>
         </div>
       </div>
