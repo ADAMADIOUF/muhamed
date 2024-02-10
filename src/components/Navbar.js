@@ -95,7 +95,12 @@ const Navbar = () => {
         </ul>
       </div>
       <div className='cv'>
-        <h3>Download cv</h3>
+        <a
+          href='/file:///Users/adamadiouf/Downloads/Black%20and%20White%20Minimalist%20Photographer%20Resume.pdf'
+          download
+        >
+          <h3>Download CV</h3>
+        </a>
       </div>
       <div className='hamburger' onClick={handleToggleMenu}>
         {isMenuOpen ? <FaTimes /> : <FaBars />}
